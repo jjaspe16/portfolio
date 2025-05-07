@@ -19,23 +19,38 @@
 
 <body>
 
-    <ul class="ul_nav d-flex justify-content-center align-items-center">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+         
+      
+          <!-- Toggler for mobile -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <!-- Collapsible content -->
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav ul_nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#works">Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
 
-        <li class="nav-item">
-            <a class="nav-link active" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#works">Works</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link " href="#contact">Contact</a>
-        </li>
-    </ul>
 
-    
     <section id="home" class="section d-flex  bg-primary vh-100 bg-cover"
         style="background-image: url('imgs/cover_img.png');">
         <img src="imgs/logo.png" style="width:20%;height:30%;" alt="logo">
@@ -128,261 +143,185 @@
             </div>
 
         </div>
-        <div class="container ">
-            <div class="skills_con-cert ">
+
+        <div class="container text-center">
+            <div class="skills_con-cert">
                 <hr>
-                <h4 style="font-size: 20px;" class="h4_class d-flex justify-content-center align-items-center">
+                <h4 class="h4_class">
                     <b>Certi<span class="span_active">ficates:</span></b>
                 </h4>
             </div>
-        </div><br>
+        </div>
+        <br>
 
-        <div class="container position-relative">
+        <div class="container position-relative text-center"> 
             <div class="slideshow-container">
+        
+                <!-- Slides -->
                 <div class="mySlides active">
-                    <div class="numbertext">1 / 14</div>
-                    <div class="image-center">
-                        <img src="imgs/cer1.png" style="width:50%; text-align: center;">
-                    </div>
-                </div>
-
-
-                <div class="mySlides">
-                    <div class="numbertext">2 / 14</div>
-                    <div class="image-center">
-                        <img src="imgs/cer2.jpg" style="width:50%">
-                    </div>
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">3 / 14</div>
-                    <div class="image-center">
-                        <img src="imgs/cer3.jpg" style="width:50%">
-                    </div>
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">4 / 14</div>
-                    <div class="image-center">
-                        <img src="imgs/cer4.jpg" style="width:50%">
-                    </div>
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">5 / 14</div>
-                    <div class="image-center">
-                        <img src="imgs/dict.png" style="width:50%">
-                    </div>
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">6 / 14</div>
-                    <div class="image-center">
-                        <img src="imgs/dict2.jpg" style="width:50%">
-                    </div>
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">7 / 14</div>
-                    <div class="image-center">
-                        <img src="imgs/img2.png" style="width:50%">
-                    </div>
-                </div>
-
-                <div class="mySlides">
-                    <div class="numbertext">8 / 14</div>
-                    <div class="image-center">
-                        <img src="imgs/img3.png" style="width:50%">
-                    </div>
+                    <div class="numbertext">1 / 6</div>
+                    <img src="imgs/cer1.png" class="img-fluid mx-auto d-block" style="width:50%;">
                 </div>
                 <div class="mySlides">
-                    <div class="numbertext">10 / 14</div>
-                    <div class="image-center">
-                        <img src="imgs/img3.png" style="width:50%">
-                    </div>
+                    <div class="numbertext">2 / 6</div>
+                    <img src="imgs/cer2.jpg" class="img-fluid mx-auto d-block" style="width:50%;">
                 </div>
                 <div class="mySlides">
-                    <div class="numbertext">11 / 14</div>
-                    <div class="image-center">
-                        <img src="imgs/img4.png" style="width:50%">
-                    </div>
+                    <div class="numbertext">3 / 6</div>
+                    <img src="imgs/cer3.jpg" class="img-fluid mx-auto d-block" style="width:50%;">
                 </div>
                 <div class="mySlides">
-                    <div class="numbertext">12 / 14</div>
-                    <div class="image-center">
-                        <img src="imgs/img5.png" style="width:50%">
-                    </div>
+                    <div class="numbertext">4 / 6</div>
+                    <img src="imgs/cer4.jpg" class="img-fluid mx-auto d-block" style="width:50%;">
                 </div>
                 <div class="mySlides">
-                    <div class="numbertext">13 / 14</div>
-                    <div class="image-center">
-                        <img src="imgs/img6.png" style="width:50%">
-                    </div>
+                    <div class="numbertext">5 / 6</div>
+                    <img src="imgs/dict.png" class="img-fluid mx-auto d-block" style="width:50%;">
                 </div>
                 <div class="mySlides">
-                    <div class="numbertext">14 / 14</div>
-                    <div class="image-center">
-                        <img src="imgs/img7.png" style="width:50%">
-                    </div>
+                    <div class="numbertext">6 / 6</div>
+                    <img src="imgs/dict2.jpg" class="img-fluid mx-auto d-block" style="width:50%;">
                 </div>
-
-            </div>
-
-            <div class="caption-container" style="margin-left: 40px;">
-                <p id="caption"></p>
-            </div>
-
-            <div class="row" style="margin-left:100px; margin-top: 2px;margin-bottom:40px">
-                <div class="column">
-                    <img class="demo cursor" src="imgs/cer1.png" style="width:100%" onclick="currentSlide(1)" alt="">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="imgs/cer2.jpg" style="width:100%" onclick="currentSlide(2)">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="imgs/cer3.jpg" style="width:100%" onclick="currentSlide(3)">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="imgs/cer4.jpg" style="width:100%" onclick="currentSlide(4)">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="imgs/dict.png" style="width:100%" onclick="currentSlide(5)">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="imgs/dict2.jpg" style="width:100%" onclick="currentSlide(6)">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="imgs/img2.png" style="width:100%" onclick="currentSlide(7)">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="imgs/img3.png" style="width:100%" onclick="currentSlide(8)">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="imgs/img4.png" style="width:100%" onclick="currentSlide(9)">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="imgs/img5.png" style="width:100%" onclick="currentSlide(10)">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="imgs/img6.png" style="width:100%" onclick="currentSlide(11)">
-                </div>
-                <div class="column">
-                    <img class="demo cursor" src="imgs/img7.png" style="width:100%" onclick="currentSlide(12)">
-                </div>
-
+        
+                <!-- Navigation Arrows - now outside all slides -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+        
+            </div>
+        
+            <div class="caption-container mt-3">
+                <p id="caption"></p>
             </div>
         </div>
-
+        
     </section>
 
-    <section id="works" class="div_works text-center py-5 bg-light">
+    <section id="works" class="div_works text-center py-5 ">
         <hr>
         <div class="box d-flex justify-content-center">
-            <div class="h5_con d-flex justify-content-center">
+            <div class="h5_con">
                 <h5><b><span class="span_active">My</span>&nbsp;Works</b></h5>
             </div>
         </div>
-
-        <div class="container my-4" style="margin-left: 20px;">
-            <div class="row g-4">
-                <!-- Repeat this card structure for all 5 cards -->
-
+    
+        <div class="container my-4">
+            <div class="row g-4 justify-content-center">
+    
+                <!-- Repeatable card structure (example for one) -->
                 <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="card h-100 shadow-sm custom-card">
                         <a href="imgs/fac.png" target="_blank">
-                            <img src="imgs/fac.png" alt="">
+                            <img src="imgs/fac.png" class="card-img-top" alt="Faculty Evaluation">
                         </a>
                         <div class="card-body">
-                            <h6 class="text-center"><b><u>Faculty Evaluation <span
-                                            class="span_active">System</span></u></b><br> (60% Done)</h6>
-                            <p class="p_class"> A custom-built system for students to anonymously evaluate teachers
-                                online, ensuring
+                            <h6 class="text-center">
+                                <b><u>Faculty Evaluation <span class="span_active">System</span></u></b><br> (60% Done)
+                            </h6>
+                            <p class="p_class">
+                                A custom-built system for students to anonymously evaluate teachers online, ensuring
                                 transparency and insightful feedback.
-                                Features include real-time analysis, customizable criteria, role-based access, data
-                                encryption, and a user-friendly interface.
                             </p>
                         </div>
                     </div>
                 </div>
+    
+                <!-- Card 2 -->
                 <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="card h-100 shadow-sm custom-card">
                         <a href="imgs/javaLib.png" target="_blank">
-                            <img src="imgs/javaLib.png" alt="">
+                            <img src="imgs/javaLib.png" class="card-img-top" alt="Library Management">
                         </a>
                         <div class="card-body">
-                            <h6 class="text-center"><b><u>Library Management <span
-                                            class="span_active">System</span></u></b></h6>
-                            <p class="p_class">A system that allows input of student or faculty data along with
-                                book borrow and return dates to maintain accurate lending records.
-                                This ensures timely returns, minimizes overdue books, and helps in tracking
-                                borrowing history efficiently.</p>
+                            <h6 class="text-center">
+                                <b><u>Library Management <span class="span_active">System</span></u></b>
+                            </h6>
+                            <p class="p_class">
+                                A system for managing book borrow and return records for students and faculty, ensuring
+                                timely returns and accurate lending history.
+                            </p>
                         </div>
                     </div>
                 </div>
-
+    
+                <!-- Card 3 -->
                 <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="card h-100 shadow-sm custom-card">
                         <a href="imgs/lavista.png" target="_blank">
-                            <img src="imgs/lavista.png" alt="">
+                            <img src="imgs/lavista.png" class="card-img-top" alt="LaVista Reservation">
                         </a>
                         <div class="card-body">
-                            <h6 class="text-center"><b><u>La'Vista Online Reservation <span
-                                            class="span_active">System</span> </u></b>(Frontend
-                                only)</h6>
-                            <p class="p_class">My first ever build from the scratch unfinished system that provides
-                                clients
-                                with an efficient way to book
-                                accommodations as it is accessible online.
-                                Its features include real-time availability of amenities, detailed resort
-                                information,
-                                cottage rates, a secure payment gateway,
-                                automated booking confirmation, user-friendly interface, and a customer support
-                                system for
-                                seamless reservations.</p>
+                            <h6 class="text-center">
+                                <b><u>La'Vista Online Reservation <span class="span_active">System</span></u></b>
+                                (Frontend only)
+                            </h6>
+                            <p class="p_class">
+                                My first fully scratch-built UI system for booking accommodations online, with real-time
+                                availability, secure payment, and customer support features.
+                            </p>
                         </div>
                     </div>
                 </div>
+    
+                <!-- Card 4 -->
                 <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="card h-100 shadow-sm custom-card">
                         <a href="imgs/tkinter.png" target="_blank">
-                            <img src="imgs/tkinter.png" alt="">
+                            <img src="imgs/tkinter.png" class="card-img-top" alt="Library Attendance">
                         </a>
-
                         <div class="card-body">
-                            <h6 class="text-center"><b><u>Library Attendance Monitoring <span
-                                            class="span_active">System</span></u></b></h6>
-                            <p class="p_class">The Library Attendance Monitoring System enables students and faculty
-                                to digitally log their entry into the library.
-                                It ensures precise attendance records, improves security, and offers real-time data
-                                for efficient management.</p>
+                            <h6 class="text-center">
+                                <b><u>Library Attendance Monitoring <span class="span_active">System</span></u></b>
+                            </h6>
+                            <p class="p_class">
+                                Enables digital attendance logging for students and faculty, ensuring accuracy and real-time
+                                tracking for better library management.
+                            </p>
                         </div>
                     </div>
                 </div>
-
-
+    
+                <!-- Card 5 -->
                 <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
                     <div class="card h-100 shadow-sm custom-card">
                         <a href="imgs/portf.png" target="_blank">
-                            <img src="imgs/portf.png" alt="">
+                            <img src="imgs/portf.png" class="card-img-top" alt="Portfolio">
                         </a>
-
                         <div class="card-body">
-                            <h6 class="text-center"><b><u>Web <span class="span_active">Portfolio</span></u></b></h6>
-                            <p class="p_class">An online space where I showcase my skills, projects, and achievements.
-                                It acts as a digital resume, allowing others in tech ,
-                                collaborators to easily access my work, learn about my experience, and
-                                contact me.</p>
+                            <h6 class="text-center">
+                                <b><u>Web <span class="span_active">Portfolio</span></u></b>
+                            </h6>
+                            <p class="p_class">
+                                A personal website that showcases my skills, projects, and achievements — acting as a
+                                digital resume for collaborators and tech professionals.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Card 6 -->
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="card h-100 shadow-sm custom-card">
+                        <a href="imgs/PSTPortfolio.png" target="_blank">
+                            <img src="imgs/PSTPortfolio.png" class="card-img-top" alt="PST Portfolio">
+                        </a>
+                        <div class="card-body">
+                            <h6 class="text-center">
+                                <b><u>Pre-service Teachers' <span class="span_active">Web Portfolio</span></u></b>
+                            </h6>
+                            <p class="p_class">
+                                Designed for a school to showcase PSTs' portfolios — including their school information, lesson plans, 
+                                and documentation — in a clear, accessible, and responsive format across all devices.
+                            </p>
                         </div>
                     </div>
                 </div>
 
-
+    
             </div>
         </div>
     </section>
+    
+    
 
 
     <hr>
@@ -399,8 +338,8 @@
         <div class="contact-content">
             <div class="box1 contact-info">
                 <p><img src="icons/fb.png" alt="fb">&nbsp;
-                    <a href="https://www.facebook.com/julie.jaspe.2024"
-                        class="contact-link">facebook.com/julie.jaspe.2024</a>
+                    <a href="https://www.facebook.com/Julie.qt.16"
+                        class="contact-link">facebook.com/Julie.qt.16</a>
                 </p>
                 <p><img src="icons/phone.png" alt="number">&nbsp;&nbsp;
                     <a href="tel:+639484653894" class="contact-link">+639484653894</a>
@@ -423,7 +362,7 @@
 
 
 
-    <footer class="d-flex justify-content-center align-items-center" style="background-color: rgb(241, 214, 214);">
+    <footer class="d-flex justify-content-center align-items-center" style="background-color: rgb(242, 237, 237);">
         <hr>
         <p style="text-align: center;font-size: 12px;"><img src="icons/copyright.png" alt="">Julie Jaspe| 2025</p>
     </footer>
@@ -450,7 +389,9 @@
     </script>
 
 
-    <!--images certif. -->
+
+
+    <!--certificates  slider-->>
     <script>
         let slideIndex = 1;
         showSlides(slideIndex);
@@ -463,21 +404,67 @@
             showSlides(slideIndex = n);
         }
 
-
         function showSlides(n) {
             let i;
-            let slides = document.getElementsByClassName("mySlides");
-            if (n > slides.length) slideIndex = 1;
-            if (n < 1) slideIndex = slides.length;
+            const slides = document.getElementsByClassName("mySlides");
+            const dots = document.getElementsByClassName("demo");
+
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+
             for (i = 0; i < slides.length; i++) {
                 slides[i].classList.remove("active");
             }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].classList.remove("active-thumb");
+            }
+
             slides[slideIndex - 1].classList.add("active");
+            dots[slideIndex - 1].classList.add("active-thumb");
         }
 
+        // Swipe support
+        const slideshow = document.querySelector('.slideshow-container');
+        let touchStartX = 0;
+        let touchEndX = 0;
 
+        slideshow.addEventListener('touchstart', function (e) {
+            touchStartX = e.changedTouches[0].screenX;
+        }, false);
+
+        slideshow.addEventListener('touchend', function (e) {
+            touchEndX = e.changedTouches[0].screenX;
+            handleGesture();
+        }, false);
+
+        function handleGesture() {
+            if (touchEndX < touchStartX - 40) {
+                plusSlides(1); // swipe left
+            }
+            if (touchEndX > touchStartX + 40) {
+                plusSlides(-1); // swipe right
+            }
+        }
     </script>
 
+<!--closed navigation-->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+      const navbarCollapse = document.getElementById('navbarNav');
+  
+      navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false
+          });
+          bsCollapse.hide();
+        });
+      });
+    });
+  </script>
+  
 
 
     <!-- Bootstrap JS & jQuery (Required for Modal to Work) -->
@@ -487,5 +474,3 @@
 </body>
 
 </html>
-
-
