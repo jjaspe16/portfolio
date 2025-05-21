@@ -35,14 +35,14 @@
                     <li style="padding-left: 20px;" class="nav-item">
                         <a class="nav-link active" href="#home">Home</a>
                     </li>
-                    <li style="padding-left: 20px;"class="nav-item">
+                    <li style="padding-left: 20px;" class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
-                    <li style="padding-left: 20px;"class="nav-item">
+                    <li style="padding-left: 20px;" class="nav-item">
                         <a class="nav-link" href="#works">Works</a>
                     </li>
-                    <li style="padding-left: 20px;"class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a> 
+                    <li style="padding-left: 20px;" class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -53,7 +53,7 @@
 
     <section id="home" class="section fade-section d-flex  bg-primary vh-100 bg-cover"
         style="background-image: url('imgs/cover_img.png');">
-       
+
         <div class="container" style="margin-top: 180px;">
             <h1 style="color:white;font-family:Trebuchet MS;">Hi, <br> It's Julie !</h1>
             <h4></h4> <br><br><br>
@@ -72,8 +72,9 @@
         </div>
         <div class="text_img d-flex ">
             <div class="con-text d-flex justify-content-center align-items-center">
-                <p class="p d-flex justify-content-center align-items-center" style="text-align: justify;">
-                   &nbsp; &nbsp;&nbsp;&nbsp;I hold a Bachelor’s Degree of Information
+                <p class="p d-flex justify-content-center align-items-center"
+                    style="text-align: justify;font-size: 20px;">
+                    &nbsp; &nbsp;&nbsp;&nbsp;I hold a Bachelor’s Degree of Information
                     Technology and am an enthusiastic entry-level programmer committed to continuously enhancing my
                     coding skills. My natural curiosity drives me to deeply understand how systems function.
                     Although my knowledge and skills might not be very broad,
@@ -199,7 +200,7 @@
     <section id="works" class="div_works fade-section text-center py-5 ">
         <hr>
         <div class="box d-flex justify-content-center">
-            <div class="h5_con"> 
+            <div class="h5_con">
                 <h5><b><span class="span_active">My</span>&nbsp;Works</b></h5>
             </div>
         </div>
@@ -310,9 +311,37 @@
                                 <b><u>Pre-service Teachers' <span class="span_active">Web Portfolio</span></u></b>
                             </h6>
                             <p class="p_class">
-                               A group project Designed to showcase PSTs' portfolios — including their school information,
+                                A group project Designed to showcase PSTs' portfolios — including their school
+                                information,
                                 lesson plans
                                 and documentation — in a clear, accessible, and responsive format across all devices.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="card h-100 shadow-sm custom-card">
+                        <div class="UI-box d-flex">
+                            <a href="imgs/ui.png" target="_blank">
+                                <img src="imgs/ui.png" class="card-img-top" alt="UI">
+                            </a> <br>
+                            <a href="imgs/ui2.png" target="_blank">
+                                <img src="imgs/ui2.png" class="card-img-top" alt="UI">
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="text-center">
+                                <b><u><span class="span_active">Coffee Shop</span></u></b>
+                            </h6>
+                            <p class="p_class">
+                                An Android coffee shop app UI in Figma, keeping it simple, cozy, and easy
+                                to use—just like your favorite café. The layout lets users browse the menu, customize
+                                their drinks, and place orders with just a few taps. I focused on creating a warm,
+                                inviting feel that captures the charm of a real coffee shop, all while making the
+                                experience smooth and intuitive for users.
+
                             </p>
                         </div>
                     </div>
@@ -474,26 +503,26 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!--FADE-IN & OUT TRANSITION-->
-<script>
-  const fadeSections = document.querySelectorAll(".fade-section");
+    <script>
+        const fadeSections = document.querySelectorAll(".fade-section");
 
-  const options = {
-    threshold: 0.1
-  };
+        const options = {
+            threshold: 0.1
+        };
 
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("fade-in");
-        observer.unobserve(entry.target); // Remove if you want it to fade in only once
-      }
-    });
-  }, options);
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("fade-in");
+                    observer.unobserve(entry.target); // Remove if you want it to fade in only once
+                }
+            });
+        }, options);
 
-  fadeSections.forEach(section => {
-    observer.observe(section);
-  });
-</script>
+        fadeSections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 
 </body>
 
