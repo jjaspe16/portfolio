@@ -66,8 +66,15 @@ section {
 }
 
 @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
 
 /* About Section */
@@ -202,7 +209,8 @@ h5 {
     margin: auto;
 }
 
-.prev, .next {
+.prev,
+.next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -215,8 +223,13 @@ h5 {
     z-index: 10;
 }
 
-.prev { left: 0; }
-.next { right: 0; }
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
 
 /* Works Section */
 #works {
@@ -355,7 +368,8 @@ footer {
         align-items: center;
     }
 
-    .text_img, .con-text {
+    .text_img,
+    .con-text {
         margin-left: 0;
         padding-left: 10px;
     }
@@ -370,17 +384,38 @@ footer {
         align-items: center;
     }
 
-    .contact-info, .contact-form {
+    .contact-info,
+    .contact-form {
         max-width: 90%;
     }
 }
 
 @media (max-width: 576px) {
-    .h4_class, h5 {
+
+    .h4_class,
+    h5 {
         font-size: 16px;
     }
 
     .skills_grid {
         grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+}
+
+/* Hover effect for submit button */
+.btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+/* Smooth input focus effect */
+.form-control:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    border-color: #0d6efd;
+}
+
+/* Reduce spacing between Contact Info & Form on mobile */
+@media (max-width: 768px) {
+    .contact-section .row>[class*="col-"] {
+        margin-bottom: 1.5rem;
     }
 }
